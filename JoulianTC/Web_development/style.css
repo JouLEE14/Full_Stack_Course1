@@ -1,0 +1,33 @@
+body{
+background-color: bisque;
+width: 90vw;
+height: 50vh;
+}
+header{
+
+    background-color: rgb(47, 151, 236);
+    background-size: auto;
+    height: 10vh;
+    width: 100%;
+    margin-top: 10px;
+}
+input{
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+button{
+    border-radius:8px;
+    padding: 5px;
+    cursor: pointer;
+}
+.search{
+    background-color: rgb(3, 79, 122);
+    color: rgb(255, 255, 255);
+}
+.login{
+    margin-left: 23rem;
+}
+.btn{
+    margin-left: 85px;
+}

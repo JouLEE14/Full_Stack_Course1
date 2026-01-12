@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page</title>
+    <style>
+        body{
+            background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Aurora_borealis_over_Eielson_Air_Force_Base%2C_Alaska.jpg/1200px-Aurora_borealis_over_Eielson_Air_Force_Base%2C_Alaska.jpg);
+            display: flex;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: rgba(27, 46, 110, 0.3);
+            width: 20vw;
+            height: 35vh;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        h1{
+            text-align:center;
+            color: rgb(252, 15, 15);
+        }
+
+        input{
+        align-items: center;
+        display: block;
+        margin: 30PX;
+        margin-left: 1rem;
+        padding: 10px;
+        padding-left: 9PX;
+        padding-right: 10rem;
+        border-radius: 10px;
+        border-color: rgb(112, 210, 255);
+        background-color: rgba(38, 14, 172, 0.1);
+        color: antiquewhite;
+        }
+        ::placeholder{
+            color: aliceblue;
+        }
+        button{
+        width: 50%;
+        border: none;
+        border-radius: 10px;
+        padding: 10PX;
+        margin-left: 6rem;
+        background-color: rgb(10, 45, 199);
+        color: rgba(255, 255, 255);
+        cursor: pointer;
+        font-weight: bold;
+        }
+        button:hover{
+            background-color: rgb(130, 236, 68);
+            color: blue;
+        }
+        a{
+            margin-top: 40PX;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: rgb(106, 235, 240);
+        }
+        a:hover{
+            color: rgb(223, 38, 38);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="#" method="post">
+        <input type="text" placeholder="Enter your name">
+        <input type="Password" placeholder="Enter your password">
+        <button>Submit</button>
+        </form>
+        <a href="#">forget your password</a>
+    </div>
+</body>
+</html>
