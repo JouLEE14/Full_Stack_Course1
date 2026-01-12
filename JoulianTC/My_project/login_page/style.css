@@ -1,0 +1,39 @@
+body{
+background-color: bisque;
+background-size: cover;
+}
+header{
+    background-color: rgb(47, 151, 236);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 10px;
+    height: 16vh;
+}
+#logo{
+    color: white;
+    width: bold;
+    font-size: 50px;
+    margin-left: 50px;
+}
+input{
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 8rem;
+}
+button{
+    border-radius:8px;
+    padding: 9px;
+    cursor: pointer;
+}
+.search{
+    margin-right: 10rem;
+    background-color: rgb(3, 79, 122);
+    color: rgb(255, 255, 255);
+}
+.login{
+    margin-right: 20px;
+    background-color: rgb(5, 113, 175);
+    color: rgb(255, 255, 255);
+}
+    
