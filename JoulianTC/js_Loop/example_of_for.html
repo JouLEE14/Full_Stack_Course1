@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If / Else / Else If Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        
+        button {
+            margin-left: 10px;
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Grade Checker</h2>
+    <input type="number" id="numberInput" placeholder="Enter a Number" />
+    <button onclick="calculateSum()">Calculate</button>
+
+    <p id="result"></p>
+    <script>
+        function calculateSum() {
+            const num = parseInt(document.getElementById("numberInput").value);
+            let sum = 0;
+            for (let i = 1; i <= num; i++) {
+                sum += i;
+            }
+            document.getElementById(
+                "result"
+            ).textContent = `The sum of 1 to ${num} is ${sum}`;
+        }
+    </script>
+</body>
+
+</html>

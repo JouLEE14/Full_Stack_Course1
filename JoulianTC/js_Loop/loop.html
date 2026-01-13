@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+
+        }
+
+        h3 {
+            margin-top: 30px;
+        }
+
+        .result {
+            margin: 30PX;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScriptLoops-All in one</h2>
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById("output");
+        function section(title) {
+            const h3 = document.createElement("h3");
+            h3.textContent = title;
+            output.appendChild(h3);
+        }
+        function show(text) {
+            const div = document.createElement("div");
+            div.className = "result";
+            div.textContent = text;
+            output.appendChild(div);
+        }
+        // 1. for loop
+        section("1. for loop");
+        for (let i = 0; i < 3; i++) {
+            show("for loop → " + i);
+        }
+        // 2. while loop
+        section("2. while loop");
+        let j = 0;
+        while (j < 3) {
+            show("while loop → " + j);
+            j++;
+        }
+        // 3. do...while loop
+        section("3. do...while loop");
+        let k = 0;
+        do {
+            show("do...while loop → " + k);
+            k++;
+        } while (k < 3);
+        // 4. for...of loop
+        section("4. for...of loop");
+        const colors = ["red", "green", "blue"];
+        for (const color of colors) {
+            show("for...of → " + color);
+        }
+        // 5. for...in loop
+        section("5. for...in loop");
+        const person = {
+            name: "Jane", age: 30
+        };
+        for (const key in person) {
+            show(`for...in → ${key}:
+${person[key]}`);
+        }
+    </script>
+</body>
+
+</html>
