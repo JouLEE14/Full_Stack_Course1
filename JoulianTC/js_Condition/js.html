@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Comparison Operators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .result {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JavaScript Comparison Operators</h2>
+    <div id="output"></div>
+
+
+    <script>
+        let a = 5;
+        let b = "5";
+        let c = 10;
+        const output = document.getElementById("output");
+        function show(text) {
+            const div = document.createElement("div");
+            div.className = "result";
+            div.textContent = text;
+            output.appendChild(div);
+        }
+        // if / else if / else
+        let score = 85;
+        if (score >= 90) {
+            show("Excellent");
+        } else if (score >= 70) {
+            show("Good");
+        } else {
+            show("Needs improvement");
+        }
+        // switch
+        let color = "green";
+        switch (color) {
+            case "red":
+                show("Stop");
+                break;
+            case "green":
+                show("Go");
+                break;
+            case "yellow":
+                show("Caution");
+                break;
+            default:
+                show("Unknowncolor");
+}
+    </script>
+</body>
+
+</html>
