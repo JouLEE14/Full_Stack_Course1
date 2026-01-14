@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Event Handling Example</title>
+</head>
+
+<body>
+    <div id="box" style="
+width: 150px;height: 100px;background: #ccc;text-align: center;line-height: 100px;">Hover Here</div>
+    <p id="result"></p>
+    <script>
+        const box = document.getElementById("box");
+        const result = document.getElementById("result");
+
+        box.addEventListener(
+            "mouseover",
+            () => (result.textContent = "Mouse over!")
+        );
+        box.addEventListener(
+            "mouseout",
+            () => (result.textContent = "Mouse out!")
+        );
+    </script>
+</body>
+
+</html>

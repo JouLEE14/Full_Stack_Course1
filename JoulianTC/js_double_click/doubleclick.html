@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Event Handling Example</title>
+</head>
+
+<body>
+    <h2>Click the button</h2>
+    <div id="box" style="width: 150px;height: 100px;background: #447aad;line-height: 100px;text-align: center;">Double Click Me</div>
+    <p id="result"></p>
+    <script>
+        document.getElementById("box").addEventListener("dblclick", function () {
+            document.getElementById("result").textContent = "Double clicked!";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FormData + Event Handling Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>User Info Form</h2>
+    <form id="userForm">
+        <label>
+            Name:
+            <input type="text" name="name" required />
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" required />
+        </label>
+        <label>
+            Favorite Color:
+            <select name="color">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="output" id="resultBox">
+        <strong>Submitted data will appear here...</strong>
+    </div>
+    <script>
+        const form = document.getElementById("userForm");
+        const resultBox =
+            document.getElementById("resultBox");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();// Prevent default page reload
+            const formData = new FormData(form);
+            // Convert form data to a readable format
+            let resultHTML = "<h3>Submitted Data:</h3><ul>";
+
+            for (const [key, value] of formData.entries()) {
+                resultHTML += `<li><strong>${key}:</strong>
+${value}</li>`;
+            }
+            resultHTML += "</ul>";
+            // Display the result
+            resultBox.innerHTML = resultHTML;
+        });
+    </script>
+</body>
+
+</html>
