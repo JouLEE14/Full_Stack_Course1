@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Animation Example</title>
+    <style>
+        #box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(8, 136, 255);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="startBtn">Animate Box</button>
+    <div id="box"></div>
+    <script>
+        const box = document.getElementById('box');
+        const button = document.getElementById('startBtn');
+        button.addEventListener('click', () => {
+            let position = 0;
+
+            function moveBox() {
+                position += 2;
+                box.style.left = position + 'px';
+                if (position < 300) {
+                    requestAnimationFrame(moveBox);
+                }
+            }
+            moveBox();
+        });
+    </script>
+</body>
+
+</html>

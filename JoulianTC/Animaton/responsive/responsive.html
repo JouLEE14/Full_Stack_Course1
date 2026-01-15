@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design
+        Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #bb320f;
+            border-radius: 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            background-color: #e268172f;
+        }
+        
+        /* Responsive breakpoint */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Card Layout</h2>
+    <p>Resize the window to see the layout change!</p>
+    <div class="container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+    </div>
+</body>
+
+</html>

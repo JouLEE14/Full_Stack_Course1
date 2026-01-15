@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LocalStorage Example</title>
+</head>
+
+<body>
+    <button onclick="loadName()">Load Name</button>
+    <p id="result"></p>
+    <script>
+        function loadName() {
+            const savedName = localStorage.getItem("username");
+            document.getElementById("result").textContent =
+                savedName
+                    ? `Hello, ${savedName}!`
+                    : "No name saved.";
+        }
+    </script>
+</body>
+
+</html>
